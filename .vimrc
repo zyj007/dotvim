@@ -35,17 +35,6 @@ function! HasPaste()
 	return ''
 endfunction
 
-function Mytitle()
-		call setline(1,"/**********************************************")
-		call append(line("."),"Auhtor:ZYJ007")
-		call append(line(".")+1,"Time:".strftime("%c"))
-		call append(line(".")+2,"File:".expand("%"))
-		call append(line(".")+3,"Desc:")
-		call append(line(".")+4,"**********************************************/")
-endf
-
-map <F2> <Esc>:call Mytitle()<CR><Esc>:$<Esc>o
-
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " 设置默认打开html等网页文件的自动补全
 autocmd BufNewFile,BufRead *.html,*.htm,*.xml inoremap </ </<c-x><c-o>
