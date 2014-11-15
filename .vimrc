@@ -15,6 +15,8 @@ set ruler
 set cmdheight=2
 set incsearch
 
+"test input
+"
 filetype plugin on
 filetype indent on
 
